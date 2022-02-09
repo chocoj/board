@@ -19,14 +19,14 @@ CREATE SEQUENCE board_seq;
 
 -- 회원 테이블
 CREATE TABLE "member"
-{
+(
     usrid VARCHAR2(20) PRIMARY KEY,
     usrpwd VARCHAR2(100) NOT NULL,
     usrname VARCHAR2(50) NOT NULL,
     email VARCHAR2(100) NOT NULL,
     enabled NUMBER (1) DEFAULT 1, --1: 사용가능, 0:사용불가능 (security에서 사용하는 칼럼)
     rolename VARCHAR2(50) DEFAULT 'ROLE_USER' NOT NULL --ROLE_USER, ROLE_MANGER, ROLE_ADMIN 등 각 역할에 따라
-};
+);
 
 --VCS: 소스코드 - (commit)Git - Github
 --http://git-scm.com

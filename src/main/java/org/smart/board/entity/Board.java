@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 @Setter @Getter
-public class MyBoard {
+public class Board {
     private Long boardseq;
     private String usrid;
     private String title;
